@@ -79,7 +79,19 @@ namespace _2019_03_01_Oraimunka_teszteles_jaratkezelo
         }
         public List<string> JaratokRepuloterrol(string repter)
         {
-            return null;
+            List<string> Repter = new List<string>();
+            for (int i = 0; i < Jaratok_lista.Count; i++)
+            {
+                if (Jaratok_lista[i].HonnanRepter.Equals(repter))
+                {
+                    Repter.Add(Jaratok_lista[i].Jaratszam);
+                }
+            }
+            if (Jaratok_lista.Count == 0)
+            {
+                throw new ArgumentException();
+            }
+            return Repter;
         }
     }
 }

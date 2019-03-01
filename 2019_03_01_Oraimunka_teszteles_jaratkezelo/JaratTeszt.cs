@@ -85,5 +85,11 @@ namespace _2019_03_01_Oraimunka_teszteles_jaratkezelo
                 Jarat.MikorIndul("");
             });
         }
+        [Test]
+        public void Nem_ures_repter()
+        {
+            Jarat.UjJarat("Nem üres reptér", "asdd", "valami2", DateTime.Now);
+            Assert.AreEqual(1 , Jarat.JaratokRepuloterrol("asdd").Count);
+        }
     }
 }
