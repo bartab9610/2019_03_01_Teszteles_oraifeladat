@@ -9,7 +9,7 @@ namespace _2019_03_01_Oraimunka_teszteles_jaratkezelo
     class NegativKesesException: Exception
     {
         public NegativKesesException(string jaratszam)
-            : base("Tényleges késés nem lehet 0" + jaratszam)
+            : base("Az alábbi járatszámú " + jaratszam + " repülőnek nincs késése")
         {
 
         }
