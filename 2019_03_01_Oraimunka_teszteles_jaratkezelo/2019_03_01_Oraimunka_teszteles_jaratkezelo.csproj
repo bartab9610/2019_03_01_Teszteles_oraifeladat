@@ -52,7 +52,6 @@
     <Compile Include="JaratTeszt.cs" />
     <Compile Include="NegativKesesException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Tesztosztaly.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
